@@ -20,7 +20,7 @@ export default function PostAlt({ post }) {
         className={`w-full flex grid cursor-default grid-cols-[150px,1fr] gap-2 md:flex md:flex-col md:gap-4 md:p-4 md:text-base`}>
         <div
           className={`h-[80px] w-[150px] overflow-hidden rounded-md md:h-[220px] md:w-full md:rounded-md`}>
-          <Link href={`/post/${post.slug.current}`}>
+          <Link href={`/${post.slug.current}`}>
             {imageProps ? (
               <Image
                 src={imageProps.src}
@@ -46,8 +46,8 @@ export default function PostAlt({ post }) {
             <CategoryLabel categories={post.categories} />
           </div>
           <Link
-            href={`/post/${post.slug?.current}`}
-            className={`line-clamp-2 cursor-pointer text-ellipsis text-lg font-semibold md:line-clamp-3 md:text-xl text-black dark:text-white`}>
+            href={`/${post.slug?.current}`}
+            className={`line-clamp-2 cursor-pointer text-ellipsis text-lg font-semibold md:line-clamp-3 md:text-xl`}>
             <span
               className="bg-gradient-to-r from-black to-black bg-[length:0px_2px] bg-left-bottom
             bg-no-repeat

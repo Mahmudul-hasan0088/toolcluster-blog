@@ -41,7 +41,7 @@ export default function PostList({
                   ? "aspect-[5/4]"
                   : "aspect-square"
             )}
-            href={`/post/${post.slug?.current}`}>
+            href={`/${post.slug?.current}`}>
             {imageProps ? (
               <Image
                 src={imageProps.src}
@@ -81,7 +81,7 @@ export default function PostList({
                   : "font-semibold leading-snug tracking-tight",
                 "mt-2    dark:text-white"
               )}>
-              <Link href={`/post/${post.slug?.current}`}>
+              <Link href={`/${post.slug?.current}`}>
                 <span
                   className="bg-gradient-to-r from-black to-black bg-[length:0px_2px] bg-left-bottom
                     bg-no-repeat

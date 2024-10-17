@@ -196,7 +196,7 @@ export default function Navbar(props) {
                     sizes="(max-width: 640px) 100vw, 200px"
                   />
                 ) : (
-                  <span className="block text-center">Stablo</span>
+                  <span className="block text-center uppercase">ToolCluster Tutorials</span>
                 )}
               </Link>
               <Link
@@ -211,7 +211,7 @@ export default function Navbar(props) {
                     sizes="(max-width: 640px) 100vw, 200px"
                   />
                 ) : (
-                  <span className="block text-center">Stablo</span>
+                  <span className="block text-center uppercase">toolcluster tutorials</span>
                 )}
               </Link>
             </div>
